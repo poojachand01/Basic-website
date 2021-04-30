@@ -7,7 +7,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstap/3.3.7/js/bootstap.min.js"></script>
 </head>
-<body style="paddding-top:50px">
+<body> 
 <div class="navbar navbar-inverse navbar-fixed-top">
 <div class="container">
 <div class ="navbar-header">
@@ -18,51 +18,37 @@
     </button>
     <a class="navbar-brand" href="index.html"> OnlineShop</a>
     </div>
-    <div class="collapse navbar-collapse" id="mynavbar">
+    <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="SignUp.html"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
-            <li><a href="Login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-            <li><a href="About.html"><span class="glyphicon glyphicon-menu-down"></span> About Us</a></li>
+            <li><a href="cart.html"><span class=" glyphicon glyphicon-user"></span>Cart</a></li>
+            <li><a href="settings.html"><span class="glyphicon glyphicon-log-in"></span> Settings</a></li>
+			<li><a href="About.html"><span class="glyphicon glyphicon-menu-down"></span> About Us</a></li>
 			<li><a href="Contact.html"><span class="glyphicon glyphicon-phone"></span> Contact Us</a></li>
+            <li><a href=""> <span class="glyphicon glyphicon-log-in"></span> Logout</a>
     </ul>
 </div>
     </div>
 </div>
-</div>
-
- <div class="container-fluid"  id="content">
+    
+    
+    <div class="container-fluid"  id="content">
         <div class="row">
             <div class="col-lg-4 col-lg-offset-4" id="settings-container">
-                 <h4> CONTACT US</h4>
-                <form  action="contact_script.html" method="POST"> <img src="c.jpg" alt="" width="450px"><br>
-				<br><br><br>
-                    <div class="form-group">
-                        <input class="form-control" name="Name" placeholder="Name" required>
+                 <h4> Change Password</h4>
+                <form  action="settings_script.html" method="POST"><div class="form-group"><input type="password" class="form-control" name="old-password" placeholder="old-password" required>
                     </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" name="email" placeholder="email" required>
+                    <div class="form-group"> <input type="password" class="form-control" name="Newpassword" placeholder="password" required>
                     </div>
-                    
-                    <div class="form-group">
-                        <input type="text" class="form-control" name="City" placeholder="City" required>
-                    </div>
-                    
-                    <div class="form-group"> <input type="textarea" class="form-control" name="Message" placeholder="write ur msh here..." required>
-                    </div>
-            
-                    <button type="submit" class="btn btn-primary"> Submit</button>
+            <div class="form-group">
+                <input type="password" class="form-control" name=" password1" placeholder="Re-type Newpassword" required>
+            </div>
+                    <button type="submit" class="btn btn-primary"> Change</button>
                 </form>
             </div>
         </div>
-		<center>13-7-422, sliver apartment ,banjarahills,Hyderabad
-Tel: 0123 456 789
-Fax: 0987 654 321
-Email: Mail@yourwebaddress</center>
 
         </div>
-    
-	   <
-   <footer >
+ <footer >
  
 
 
@@ -142,3 +128,4 @@ Email: Mail@yourwebaddress</center>
 </footer>
  </body>
  </html>
+
